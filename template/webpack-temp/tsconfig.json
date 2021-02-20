@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "components/*":["src/components/*"] ,
+      "pages/*": ["src/pages/*"],
+      "hooks/*": ["src/hooks/*"],
+      "types/*": ["src/types/*"]
+    }
+  },
+  "typeRoots": [
+    "src/types" // 指定 d.ts 文件的位置，根据具体情况修改
+  ],
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "./node_modules"
+  ]
+}
