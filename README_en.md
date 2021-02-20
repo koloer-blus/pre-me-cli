@@ -1,6 +1,6 @@
-# Vertex🐟
+# Vertex-react🐟
 
-[中文｜Chinese](./README.md)
+[中文｜Chinese](./README_en.md)
 
 <div align="center">
   <img src="./logo.png">
@@ -22,7 +22,7 @@
 
 ## Use
 
-1. `npm install vertex -g`
+1. `npm install vertex-react -g`
 
 2. `vertex init [projectDirName]`
 

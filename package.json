@@ -1,5 +1,5 @@
 {
-    "name": "vertex",
+    "name": "vertex-react",
     "version": "0.0.1",
     "description": "react project builder",
     "main": "./bin/index.js",
@@ -10,6 +10,9 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "baiziyu-fe",
+    "repository": "baiziyu-fe/Vertex-FE",
+    "homepage": "https://github.com/baiziyu-fe/Vertex-FE",
+    "bugs": "https://github.com/baiziyu-fe/Vertex-FE/issues",
     "license": "ISC",
     "dependencies": {
         "chalk": "^4.1.0",
