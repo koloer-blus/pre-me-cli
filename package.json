@@ -1,5 +1,5 @@
 {
-    "name": "vertex-react",
+    "name": "vertex-react-app",
     "version": "0.0.1",
     "description": "react project builder",
     "main": "./bin/index.js",

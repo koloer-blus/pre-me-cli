@@ -1,4 +1,4 @@
-# vertex-react🐟
+# vertex-react-app🐟
 
 [英文｜English](./README_en.md)
 
@@ -22,7 +22,7 @@
 
 ## 使用
 
-1. `npm install vertex-react -g`
+1. `npm install vertex-react-app -g`
 
 2. `vertex init [projectDirName]`
 
