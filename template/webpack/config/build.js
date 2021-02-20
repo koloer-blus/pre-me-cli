@@ -9,6 +9,7 @@ webpack(webpackConfig, function (error, status) {
   if (error) {
     spinner.fail(`${chalk.red("Compilation failed!!!")}❌\n`);
     console.log(error);
+    process.exit();
     return;
   }
   spinner.succeed(`${chalk.green("Compiled successfully!!!")}✅\n`);
@@ -19,5 +20,6 @@ webpack(webpackConfig, function (error, status) {
     children: false,
     chunks: false,
     chunkModules: false
-  }) + '\n\n')
+  }) + '\n\n');
+  process.exit();
 });
