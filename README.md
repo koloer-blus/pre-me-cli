@@ -1,7 +1,9 @@
 # Vertex🐟
 
+[英文｜English](./README_en.md)
+
 <div  align="center">    
-  <img src="./public/logo.png">
+  <img src="./logo.png">
 </div>
 
 > 一款支持`Webpack`+`TypeScript`+`React`的前端脚手架
@@ -20,28 +22,9 @@
 
 ## 使用
 
-1. 下载代码：
-   ```
-   git clone git@github.com:baiziyu-fe/Vertex-FE.git
-   ```
-2. 安装依赖
-   ```
-   npm install
-   //or
-   yarn
-   ```
-3. 启动项目
-   ```
-   npm run dev
-   // or
-   yarn dev
-   ```
-4. 打包项目
-   ```
-   npm run build
-   // or
-   yarn build
-   ```
+1. `npm install vertex -g`
+
+2. `vertex init [projectDirName]`
 
 ## 自定义配置
 

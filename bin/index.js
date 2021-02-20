@@ -25,13 +25,15 @@ program
 
 // init
 program
-  .option('-i, --init [fileDirName]', 'Create project template.', 'vertex')
-  .action((fileDirName) => {
-    const dirName = fileDirName.init.toLowerCase();
+  .name('vertex')
+  .usage('<commands> [options]')
+	.command('init [fileDirName]')
+  .action((fileDirName = 'template') => {
+    const dirName = fileDirName.toLowerCase();
     if (/^[a-zA-Z][a-zA-Z0-9\-]{2,15}$/.test(dirName)) {
-      copyTemplate(templatePath + `/webpack-temp`, aimPath + `/${dirName}`);
+      copyTemplate('webpack', dirName);
     } else {
-      message.print(1, message.init.error, `The name「「${dirName}」」 of the project does not conform to the specification.`)
+      message.print(1, message.init.error, `The name「「${dirName}」」 of the project does not conform to the specification.`);
     }
   });
 
