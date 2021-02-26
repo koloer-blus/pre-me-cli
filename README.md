@@ -1,38 +1,44 @@
-# vertex-react-app🐟
+# pre-me-cli👌
 
-[英文｜English](./README_en.md)
+> A front-end scaffolding that supports `Webpack / Vite`+`TypeScript`+`React`
 
-<div  align="center">    
+ 📎[中文｜Chinese](./README_zh.md)
+
+<div align="center">
   <img src="./logo.png">
 </div>
 
-> 一款支持`Webpack`+`TypeScript`+`React`的前端脚手架
+## Features🎉
 
-## 特点🎉
+1. Compared to `create-react-app`, it is faster and supports more customization and deployment.
+2. Starting from `webpack-dev-server`, you can completely use the method of webpack official website to configure, provide package analysis, and provide users with a better one-stop service.
+3. An analysis report is included in the packaged file.
+4. With the addition of `postcss`, the mobile terminal can also be developed quickly.
+5. Add `eslint` and `prettier` for code specification.
+6. Support `Jest` test.
+7. Add `git commmit` detection.
+8. Support `mock` test.
+9. The packaging process and compiling process beautify.
 
-1. 相比于`create-react-app`速度更快，并且支持更多的自定义和部署。
-2. 从`webpack-dev-server`出手，可以完全使用webpack官网的方法进行配置。
-3. 打包的文件中带有分析报告。
-4. 加入`postcss`，移动端也能快速开发。
-5. 加入`eslint`和`prettier`进行代码规范。
-6. 支持`Jest`测试。
-7. 加入`git commmit`检测。
-8. 支持`mock`测试。
-9. 打包过程以及编译过程美化。
+## Update content👏
 
-## 使用
+1. Added the `Vite` template, and modified the state that the process is still running after the `Webpack` package is completed
 
-1. `npm install vertex-react-app -g`
+## Use
 
-2. `vertex init [projectDirName]`
+1. `npm install pre-me-cli -g`
 
-## 自定义配置
+2. `pre-me-cli init [projectDirName]`
+   - `Vite`
+   - `Webpack`
 
-1. devServer（webpack服务器配置）
-   - 在`config`文件夹下的`config.js`文件中可以配置`Proxy`、`Port`等信息。
+## Custom configuration
 
-2. 自定义路径配置
-   - 在`config`文件夹下的`webpack.base.js`文件中的`resolve -> alias`可以配置。
-   - 需要在根目录下的`tsconfig.js`中的`compilerOptions -> paths`进行配置。
+1. devServer (webpack server configuration)
+   -Information such as `Proxy` and `Port` can be configured in the `config.js` file under the `config` folder.
 
-（更多自定义配置等待你去发现）……
+2. Custom path configuration
+   -The `resolve -> alias` in the `webpack.base.js` file under the `config` folder can be configured.
+   -Need to be configured in `compilerOptions -> paths` in `tsconfig.js` in the root directory.
+
+(More custom configurations are waiting for you to discover)...

@@ -1,18 +1,23 @@
 {
-    "name": "vertex-react-app",
+    "name": "pre-me-cli",
     "version": "0.1.0",
-    "description": "react project builder",
+    "description": "Front-end project scaffolding that you can't put down.👋",
     "main": "./bin/index.js",
     "bin": {
-        "vertex": "./bin/index.js"
+        "pre-me-cli": "bin/index.js"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "baiziyu-fe",
-    "repository": "baiziyu-fe/Vertex-FE",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/baiziyu-fe/Vertex-FE.git"
+    },
     "homepage": "https://github.com/baiziyu-fe/Vertex-FE",
-    "bugs": "https://github.com/baiziyu-fe/Vertex-FE/issues",
+    "bugs": {
+        "url": "https://github.com/baiziyu-fe/Vertex-FE/issues"
+    },
     "license": "ISC",
     "dependencies": {
         "chalk": "^4.1.0",
@@ -23,5 +28,25 @@
         "log-symbols": "^4.0.0",
         "ora": "^5.3.0",
         "update-notifier": "^5.1.0"
-    }
+    },
+    "directories": {
+        "lib": "lib"
+    },
+    "devDependencies": {},
+    "keywords": [
+        "cli",
+        "template",
+        "vue",
+        "react",
+        "webpack",
+        "vite",
+        "create",
+        "app",
+        "web",
+        "fast",
+        "preciosity",
+        "less",
+        "typescript",
+        "hooks"
+    ]
 }

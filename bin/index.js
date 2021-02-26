@@ -25,7 +25,7 @@ program
 
 // init
 program
-  .name('vertex')
+  .name('pre-me-cli')
   .usage('<commands> [options]')
 	.command('init [fileDirName]')
   .action((fileDirName = 'template') => {
