@@ -12,11 +12,11 @@
     "author": "baiziyu-fe",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/baiziyu-fe/Vertex-FE.git"
+        "url": "git+https://github.com/baiziyu-fe/pre-me-cli.git"
     },
-    "homepage": "https://github.com/baiziyu-fe/Vertex-FE",
+    "homepage": "https://github.com/baiziyu-fe/pre-me-cli",
     "bugs": {
-        "url": "https://github.com/baiziyu-fe/Vertex-FE/issues"
+        "url": "https://github.com/baiziyu-fe/pre-me-cli/issues"
     },
     "license": "ISC",
     "dependencies": {
