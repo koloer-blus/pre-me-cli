@@ -30,8 +30,8 @@ program
 	.command('init [fileDirName]')
   .action((fileDirName = 'template') => {
     const dirName = fileDirName.toLowerCase();
-    if (/^[a-zA-Z][a-zA-Z0-9\-]{2,15}$/.test(dirName)) {
-      copyTemplate('webpack', dirName);
+    if (/^[a-zA-Z][a-zA-Z0-9\-_]{2,15}$/.test(dirName)) {
+      copyTemplate(dirName);
     } else {
       message.print(1, message.init.error, `The name「「${dirName}」」 of the project does not conform to the specification.`);
     }

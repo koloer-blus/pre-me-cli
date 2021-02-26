@@ -5,7 +5,7 @@
  📎[英文｜English](./README.md)
 
 <div  align="center">    
-  <img src="./logo.png">
+  <img src="./images/logo.png">
 </div>
 
 ## 特点🎉

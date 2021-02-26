@@ -5,7 +5,7 @@
  📎[中文｜Chinese](./README_zh.md)
 
 <div align="center">
-  <img src="./logo.png">
+  <img src="./images/logo.png">
 </div>
 
 ## Features🎉
