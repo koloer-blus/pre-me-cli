@@ -1,14 +1,21 @@
 import React from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 
-import Logo from './react-logo.svg';
-import './HelloWorldDemoPage.less';
+import Logo from './logo.svg';
+import './index.less';
 
-const HelloWorldDemoPage: React.FC<RouteComponentProps> = (routeProps: RouteComponentProps) => {
-  console.log(routeProps);
+const HelloWorldDemoPage: React.FC<RouteComponentProps> = () => {
   return (
     <div className="App">
       <header className="App-header">
+        <a
+          className="App-link"
+          href="/demo"
+          target="_blank"
+          rel="demo"
+        >
+          Click here jump to demo~
+        </a>
         <Logo className="App-logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
