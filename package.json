@@ -1,6 +1,6 @@
 {
     "name": "pre-me-cli",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "description": "Front-end project scaffolding that you can't put down.👋",
     "main": "./bin/index.js",
     "bin": {
