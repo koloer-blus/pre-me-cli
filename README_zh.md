@@ -1,6 +1,6 @@
 # pre-me-cli👌
 
-> 一款支持`Webpack / Vite`+`TypeScript`+`React`的前端脚手架
+> 一款支持`Webpack / Vite`+`TypeScript`+`React`的前端脚手架。这款脚手架的目标是做到一站式服务的脚手架，即提供可以适应大多数场景下的通用模板，将会支持`Webpack`和`Vite`两种打包模式，并针对两种打包模式进行优化。
 
  📎[英文｜English](./README.md)
 
@@ -9,6 +9,8 @@
 </div>
 
 ## 特点🎉
+
+### webpack模板
 
 1. 相比于`create-react-app`速度更快，并且支持更多的自定义和部署。
 2. 从`webpack-dev-server`出手，可以完全使用webpack官网的方法进行配置，提供了打包分析，并且给用户提供了更好的一站式服务。
@@ -23,6 +25,7 @@
 ## 更新内容👏
 
 1. 加入`Vite`模板，并且修改了`Webpack`打包完成后进程依旧运行的状态
+2. 删除了`Webpack`模板中无用的文件
 
 ## 使用
 
@@ -33,6 +36,8 @@
    - `Webpack`
 
 ## 自定义配置
+
+### webpack模板
 
 1. devServer（webpack服务器配置）
    - 在`config`文件夹下的`config.js`文件中可以配置`Proxy`、`Port`等信息。

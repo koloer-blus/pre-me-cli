@@ -3,9 +3,10 @@
     "target": "ESNext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "types": ["vite/client"],
-    "allowJs": false,
-    "skipLibCheck": false,
-    "esModuleInterop": false,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -14,7 +15,23 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "components/*":["src/components/*"] ,
+      "pages/*": ["src/pages/*"],
+      "hooks/*": ["src/hooks/*"],
+      "types/*": ["src/types/*"]
+    }
   },
-  "include": ["./src"]
+  "typeRoots": [
+    "src/types" // 指定 d.ts 文件的位置，根据具体情况修改
+  ],
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "./node_modules"
+  ]
 }
