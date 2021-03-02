@@ -2,7 +2,7 @@
 
 > A front-end scaffolding that supports `Webpack / Vite`+`TypeScript`+`React`. The goal of this scaffolding is to be a one-stop service scaffolding, that is, to provide a common template that can be adapted to most scenarios, and it will support the two packaging modes of `Webpack` and `Vite`, and optimize for the two packaging modes .
 
- 📎[英文｜English](./README.md)
+ 📎[中文｜Chinese](./README_zh.md)
 
 <div align="center">
   <img src="./images/logo.png">
