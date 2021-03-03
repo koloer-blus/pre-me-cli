@@ -1,0 +1,54 @@
+{
+    "name": "vite",
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "vite --mode development",
+        "prod": "vite --mode production",
+        "build": "tsc && vite build",
+        "serve": "vite preview"
+    },
+    "dependencies": {
+        "@loadable/component": "^5.12.0",
+        "react": "^17.0.0",
+        "react-dom": "^17.0.0",
+        "react-router-dom": "^5.1.2",
+        "svg-sprite-loader": "^5.2.1"
+    },
+    "devDependencies": {
+        "postcss-aspect-ratio-mini": "^1.0.1",
+        "postcss-loader": "^3.0.0",
+        "postcss-px-to-viewport": "^1.1.1",
+        "postcss-write-svg": "^3.0.1",
+        "@commitlint/cli": "^8.3.5",
+        "@vitejs/plugin-react-refresh": "^1.1.0",
+        "autoprefixer": "^9.7.4",
+        "babel-eslint": "^10.1.0",
+        "cross-env": "^7.0.2",
+        "eslint": "^6.8.0",
+        "cssnano": "^4.1.10",
+        "eslint-config-prettier": "^6.10.0",
+        "eslint-loader": "^3.0.3",
+        "eslint-plugin-jsx-control-statements": "^2.2.1",
+        "eslint-plugin-prettier": "^3.1.2",
+        "eslint-plugin-react": "^7.19.0",
+        "husky": "^4.2.3",
+        "less": "^3.11.1",
+        "less-loader": "^5.0.0",
+        "lint-staged": "^10.0.8",
+        "prettier": "^1.19.1",
+        "vite": "^2.0.1"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
+    "lint-staged": {
+        "src/**/*.{jsx,js}": [
+            "prettier --write",
+            "eslint --fix",
+            "git add"
+        ]
+    }
+}
