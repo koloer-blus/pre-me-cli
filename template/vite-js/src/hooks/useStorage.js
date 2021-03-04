@@ -8,8 +8,8 @@ export default function useStorage(
 
   useEffect(() => {
     const getItem = () => {
-      const v = window.localStorage.getItem(key) || JSON.parse(JSON.stringify(""));
-      setValue(JSON.parse(v) || defaultValue);
+      const v = window.localStorage.getItem(key);
+      setValue(JSON.parse(v || JSON.stringify(defaultValue)));
     };
     getItem();
   }, []);

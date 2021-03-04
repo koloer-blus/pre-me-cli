@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import {useState, useEffect} from 'react';
 
 export default function useStorage(
   key: string,
@@ -8,11 +8,11 @@ export default function useStorage(
 
   useEffect(() => {
     const getItem = () => {
-      const v = window.localStorage.getItem(key) || JSON.parse(JSON.stringify(""));
-      setValue(JSON.parse(v) || defaultValue);
+      const v = window.localStorage.getItem(key);
+      setValue(JSON.parse(v || JSON.stringify(defaultValue)));
     };
     getItem();
-  }, []);
+  }, [value, key]);
 
   const setItem = (data: any) => {
     try {
