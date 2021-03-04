@@ -1,64 +1,48 @@
-# pre-me-cli👌
+# [pre-me-cli👌](https://github.com/baiziyu-fe/pre-me-cli) (`#Quick react project generator`)
 
-> A front-end scaffolding that supports `Webpack / Vite`+`TypeScript`+`React`. The goal of this scaffolding is to be a one-stop service scaffolding, that is, to provide a common template that can be adapted to most scenarios, and it will support the two packaging modes of `Webpack` and `Vite`, and optimize for the two packaging modes .
+![GitHub package.json version](https://img.shields.io/github/package-json/v/baiziyu-fe/pre-me-cli) ![npm](https://img.shields.io/npm/dw/pre-me-cli) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/baiziyu-fe/pre-me-cli) ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/baiziyu-fe/pre-me-cli) ![GitHub last commit](https://img.shields.io/github/last-commit/baiziyu-fe/pre-me-cli) ![GitHub language count](https://img.shields.io/github/languages/count/baiziyu-fe/pre-me-cli) ![node-current](https://img.shields.io/node/v/react)
 
- 📎[中文｜Chinese](./README_zh.md)
+
+> A highly integrated `React` project generation scaffolding, so you don't have to worry about installing dependencies, and you don't have to repeatedly modify configuration files for custom configurations.
+> Currently, `Webpack` and `Vite` are supported as project tools for startup, and `Javascript` and `Typescript` are supported.
+
+#### 📎[中文｜Chinese](./README_zh.md)
+
+---
 
 <div align="center">
   <img src="./images/logo.png">
 </div>
 
+---
+
 ## Features🎉
 
-### webpack template
+### Real one step in place👏
 
-1. Compared to `create-react-app`, it is faster and supports more customization and deployment.
-2. Starting from `webpack-dev-server`, you can completely use the method of webpack official website to configure, provide package analysis, and provide users with a better one-stop service.
-3. An analysis report is included in the packaged file.
-4. With the addition of `postcss`, the mobile terminal can also be developed quickly.
-5. Add `eslint` and `prettier` for code specification.
-6. Support `Jest` test.
-7. Add `git commmit` detection.
-8. Support `mock` test.
-9. The packaging process and compiling process beautify.
+1. Optimized and beautified the front-end project of `Webpack template`, and added packaging analysis and custom configuration.
+2. `Webpack template` adds `Mock` test (based on `Koa`) and supports `Jest` for unit testing.
+3. All templates support `alias` path configuration, server `Proxy` configuration, `postcss`, `less`, `eslint`, `prettier` and other functions.
+4. All templates support customized configuration startup for different development environments.
+5. Use `husky` to add `git commit` detection.
+6. `React Router Dom` and support for different languages ​​have been added, providing quick start `Demo` and preset `file system management`.
 
-### Vite template
+### Highly self-modifying😯
 
-1. Provide the use of some common functions and components, and add operations such as `alias` and `proxy`
-2. Added support for startup configuration in different modes
+1. Expose all configurable items to users, support more plug-in optimization and custom operations.
+2. Provide users with a project template that is easier to use.
 
-## Update content👏
+## Use 🔧
 
-1. Added the `Vite` template, and modified the state that the process is still running after the `Webpack` package is completed
-2. Deleted useless files in the `Webpack` template
-3. The Vite template is updated to provide two startup states based on `development` and `production`
+1. Global installation: `npm install pre-me-cli -g`
+2. Use the command to create a project template: `pre-me-cli init [projectName]`
+   -`webpack-ts`
+   -`webpack-js`
+   -`vite-ts`
+   -`vite-js`
+3. Enter the project and install dependencies: `cd projectName` && `yarn`
+4. Start the project: `yarn dev` or `npm run dev`
 
-## Use
+---
 
-1. `npm install pre-me-cli -g`
-
-2. `pre-me-cli init [projectDirName]`
-   -`Vite`
-   -`Webpack`
-
-## Custom configuration
-
-### webpack template
-
-1. devServer (webpack server configuration)
-   -Information such as `Proxy` and `Port` can be configured in the `config.js` file under the `config` folder.
-
-2. Custom path configuration
-   -The `resolve -> alias` in the `webpack.base.js` file under the `config` folder can be configured.
-   -Need to be configured in `compilerOptions -> paths` in `tsconfig.js` in the root directory.
-
-### Vite template
-
-1. Custom path configuration
-   -The `resolve -> alias` in the `base.ts` file under the `config` folder can be configured
-
-(More custom configurations are waiting for you to discover)...
-## Remaining problem
-
-1. There is an error in the use of svg under the Vite template
-   -Solution: [svg-sprite-loader](https://github.com/JetBrains/svg-sprite-loader/issues/434)
+#### You are very welcome to provide some feasible suggestions and help, and look forward to your joining~

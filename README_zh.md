@@ -1,64 +1,49 @@
-# pre-me-cli👌
+# [pre-me-cli👌](https://github.com/baiziyu-fe/pre-me-cli)  (`#快速react项目生成器`)
 
-> 一款支持`Webpack / Vite`+`TypeScript`+`React`的前端脚手架。这款脚手架的目标是做到一站式服务的脚手架，即提供可以适应大多数场景下的通用模板，将会支持`Webpack`和`Vite`两种打包模式，并针对两种打包模式进行优化。
+![GitHub package.json version](https://img.shields.io/github/package-json/v/baiziyu-fe/pre-me-cli) ![npm](https://img.shields.io/npm/dw/pre-me-cli) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/baiziyu-fe/pre-me-cli) ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/baiziyu-fe/pre-me-cli) ![GitHub last commit](https://img.shields.io/github/last-commit/baiziyu-fe/pre-me-cli) ![GitHub language count](https://img.shields.io/github/languages/count/baiziyu-fe/pre-me-cli) ![node-current](https://img.shields.io/node/v/react)
 
- 📎[英文｜English](./README.md)
+
+
+> 一款高度集成的`React`项目生成脚手架，让你不必为安装依赖而烦躁，不必为自定义配置而去反复修改配置文件。
+> 目前已经支持以`Webpack`和`Vite`作为项目工具进行启动，支持`Javascript`和`Typescript`。
+
+#### 📎[英文｜English](./README.md)
+
+---
 
 <div  align="center">    
   <img src="./images/logo.png">
 </div>
 
+---
+
 ## 特点🎉
 
-### webpack模板
+### 真正的一步到位👏
 
-1. 相比于`create-react-app`速度更快，并且支持更多的自定义和部署。
-2. 从`webpack-dev-server`出手，可以完全使用webpack官网的方法进行配置，提供了打包分析，并且给用户提供了更好的一站式服务。
-3. 打包的文件中带有分析报告。
-4. 加入`postcss`，移动端也能快速开发。
-5. 加入`eslint`和`prettier`进行代码规范。
-6. 支持`Jest`测试。
-7. 加入`git commmit`检测。
-8. 支持`mock`测试。
-9. 打包过程以及编译过程美化。
+1. 针对`Webpack模板`的前端项目做了优化和美化，并且加入了打包分析和自定义配置。
+2. `Webpack模板`加入`Mock`测试（基于`Koa`），支持`Jest`进行单元测试。
+3. 所有模板支持`alias`路径配置、服务器`Proxy`配置、`postcss`、`less`、`eslint`、`prettier`等功能。
+4. 所有模板均支持不同开发环境的自定义配置启动。
+5. 使用`husky`加入`git commit`检测。
+6. 已经加入`React Router Dom`和对应不同语言的支持，提供快速上手`Demo`和预设好的`文件系统管理`。
 
-### Vite模板
+### 高度的自我修改😯
 
-1. 提供一些常用功能和组件的使用，并且加入`alias`和`proxy`等操作
-2. 加入支持不同模式下的启动配置
+1. 将所有的可配置项暴露给用户，支持更多的插拔式优化和自定义操作。
+2. 为用户提供一个更易上手的项目模板。
 
-## 更新内容👏
+## 使用🔧
 
-1. 加入`Vite`模板，并且修改了`Webpack`打包完成后进程依旧运行的状态
-2. 删除了`Webpack`模板中无用的文件
-3. Vite模板更新，提供了基于`development`和`production`两种启动状态
+1. 全局安装：`npm install pre-me-cli -g`
+2. 使用命令创建项目模板：`pre-me-cli init [projectName]`
+   - `webpack-ts`
+   - `webpack-js`
+   - `vite-ts`
+   - `vite-js`
+3. 进入项目并安装依赖：`cd projectName` && `yarn`
+4. 启动项目：`yarn dev` or `npm run dev`
 
-## 使用
+---
 
-1. `npm install pre-me-cli -g`
-
-2. `pre-me-cli init [projectDirName]`
-   - `Vite`
-   - `Webpack`
-
-## 自定义配置
-
-### webpack模板
-
-1. devServer（webpack服务器配置）
-   - 在`config`文件夹下的`config.js`文件中可以配置`Proxy`、`Port`等信息。
-
-2. 自定义路径配置
-   - 在`config`文件夹下的`webpack.base.js`文件中的`resolve -> alias`可以配置。
-   - 需要在根目录下的`tsconfig.js`中的`compilerOptions -> paths`进行配置。
-
-### Vite模板
-
-1. 自定义路径配置
-   - 在`config`文件夹下的`base.ts`文件中的`resolve -> alias`可以配置
-
-（更多自定义配置等待你去发现）……
-## 遗留问题
-
-1. Vite模板下出现svg使用报错的情况
-   - 解决方法：[svg-sprite-loader](https://github.com/JetBrains/svg-sprite-loader/issues/434)
+#### 非常欢迎你能提供一些可行的建议和帮助，期待你的加入～
