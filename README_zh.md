@@ -35,11 +35,14 @@
 ## 使用🔧
 
 1. 全局安装：`npm install pre-me-cli -g`
-2. 使用命令创建项目模板：`pre-me-cli init [projectName]`
-   - `webpack-ts`
-   - `webpack-js`
-   - `vite-ts`
-   - `vite-js`
+2. 使用命令创建项目模板：
+  ```
+     pre-me-cli init [projectName]
+     - webpack-ts
+     - webpack-js
+     - vite-ts
+     - vite-js
+  ```
 3. 进入项目并安装依赖：`cd projectName` && `yarn`
 4. 启动项目：`yarn dev` or `npm run dev`
 

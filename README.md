@@ -35,11 +35,14 @@
 ## Use 🔧
 
 1. Global installation: `npm install pre-me-cli -g`
-2. Use the command to create a project template: `pre-me-cli init [projectName]`
-   -`webpack-ts`
-   -`webpack-js`
-   -`vite-ts`
-   -`vite-js`
+2. Use the command to create a project template: 
+  ```
+     pre-me-cli init [projectName]
+     - webpack-ts
+     - webpack-js
+     - vite-ts
+     - vite-js
+  ```
 3. Enter the project and install dependencies: `cd projectName` && `yarn`
 4. Start the project: `yarn dev` or `npm run dev`
 
