@@ -5,8 +5,7 @@
         "dev": "vite --mode development",
         "prod": "vite --mode production",
         "build": "tsc && vite build",
-        "serve": "vite preview",
-        "yanghang": "vite --mode yanghang_server"
+        "serve": "vite preview"
     },
     "dependencies": {
         "@loadable/component": "^5.12.0",
