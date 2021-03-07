@@ -51,7 +51,7 @@
 > 如果你已安装`pre-me-cli`，请使用以下命令更新依赖包即可：
 
 ```
-npm update pre-me-cli
+npm update pre-me-cli -g
 
 ```
 

@@ -51,7 +51,7 @@
 > If you have installed `pre-me-cli`, please use the following command to update the dependent packages:
 
 ```
-npm update pre-me-cli
+npm update pre-me-cli -g
 
 ```
 
