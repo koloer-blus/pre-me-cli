@@ -46,6 +46,15 @@
 3. 进入项目并安装依赖：`cd projectName` && `yarn`
 4. 启动项目：`yarn dev` or `npm run dev`
 
+## 更新✨
+
+> 如果你已安装`pre-me-cli`，请使用以下命令更新依赖包即可：
+
+```
+npm update pre-me-cli
+
+```
+
 ---
 
 #### 非常欢迎你能提供一些可行的建议和帮助，期待你的加入～

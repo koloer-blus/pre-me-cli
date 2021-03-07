@@ -46,6 +46,15 @@
 3. Enter the project and install dependencies: `cd projectName` && `yarn`
 4. Start the project: `yarn dev` or `npm run dev`
 
+## Update✨
+
+> If you have installed `pre-me-cli`, please use the following command to update the dependent packages:
+
+```
+npm update pre-me-cli
+
+```
+
 ---
 
 #### You are very welcome to provide some feasible suggestions and help, and look forward to your joining~
