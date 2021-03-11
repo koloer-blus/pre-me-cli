@@ -18,7 +18,7 @@
     "bugs": {
         "url": "https://github.com/baiziyu-fe/pre-me-cli/issues"
     },
-    "license": "ISC",
+    "license": "MIT",
     "dependencies": {
         "chalk": "^4.1.0",
         "commander": "^7.1.0",
