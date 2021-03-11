@@ -9,6 +9,7 @@ const PreloadWebpackPlugin = require('preload-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
 const NyanProgressPlugin = require('nyan-progress-webpack-plugin');
+const EsBuildPlugin = require('esbuild-webpack-plugin').default;
 
 const config = require('./config');
 const baseWebpackConfig = require('./webpack.base');
@@ -159,7 +160,11 @@ module.exports = merge.smart(baseWebpackConfig, {
       }),
       new TerserPlugin({
         sourceMap: config.productionJsSourceMap
-      })
+      }),
+      new EsBuildPlugin({
+        // optimize: true,
+        target: 'chrome49',
+      }),
     ]
   }
 });
