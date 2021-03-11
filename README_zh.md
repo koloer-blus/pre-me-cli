@@ -1,4 +1,6 @@
-# [pre-me-cli👌](https://github.com/baiziyu-fe/pre-me-cli)  (`#快速react项目生成器`)
+# [pre-me-cli👌](https://github.com/baiziyu-fe/pre-me-cli)  
+
+> `#快速react项目生成器`
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/baiziyu-fe/pre-me-cli) ![npm](https://img.shields.io/npm/dw/pre-me-cli) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/baiziyu-fe/pre-me-cli) ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/baiziyu-fe/pre-me-cli) ![GitHub last commit](https://img.shields.io/github/last-commit/baiziyu-fe/pre-me-cli) ![GitHub language count](https://img.shields.io/github/languages/count/baiziyu-fe/pre-me-cli) ![node-current](https://img.shields.io/node/v/react)
 
@@ -26,6 +28,7 @@
 4. 所有模板均支持不同开发环境的自定义配置启动。
 5. 使用`husky`加入`git commit`检测。
 6. 已经加入`React Router Dom`和对应不同语言的支持，提供快速上手`Demo`和预设好的`文件系统管理`。
+7. 可以使用`npx`始终保持模板更新或者使用`npm`安装来让你的本地存有你最喜欢的版本。
 
 ### 高度的自我修改😯
 
@@ -34,8 +37,10 @@
 
 ## 使用🔧
 
-1. 全局安装：`npm install pre-me-cli -g`
-2. 使用命令创建项目模板：
+### 方式一：
+   - 全局安装：`npm install pre-me-cli -g`
+   - 使用命令创建项目模板：
+
   ```
      pre-me-cli init [projectName]
      - webpack-ts
@@ -43,17 +48,19 @@
      - vite-ts
      - vite-js
   ```
-3. 进入项目并安装依赖：`cd projectName` && `yarn`
-4. 启动项目：`yarn dev` or `npm run dev`
+### 方式二(可以使你的模板始终保持最新状态)
+  - npx安装：`npx pre-me-cli init [projectName]`
+  ```
+     - webpack-ts
+     - webpack-js
+     - vite-ts
+     - vite-js
+  ```
+### 启动项目
 
-## 更新✨
+- 进入项目并安装依赖：`cd projectName` && `yarn`
+- 启动项目：`yarn dev` or `npm run dev`
 
-> 如果你已安装`pre-me-cli`，请使用以下命令更新依赖包即可：
-
-```
-npm update pre-me-cli -g
-
-```
 
 ---
 

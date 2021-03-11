@@ -1,4 +1,6 @@
-# [pre-me-cli👌](https://github.com/baiziyu-fe/pre-me-cli) (`#Quick react project generator`)
+# [pre-me-cli👌](https://github.com/baiziyu-fe/pre-me-cli)
+
+>`#Quick react project generator`
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/baiziyu-fe/pre-me-cli) ![npm](https://img.shields.io/npm/dw/pre-me-cli) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/baiziyu-fe/pre-me-cli) ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/baiziyu-fe/pre-me-cli) ![GitHub last commit](https://img.shields.io/github/last-commit/baiziyu-fe/pre-me-cli) ![GitHub language count](https://img.shields.io/github/languages/count/baiziyu-fe/pre-me-cli) ![node-current](https://img.shields.io/node/v/react)
 
@@ -26,6 +28,7 @@
 4. All templates support customized configuration startup for different development environments.
 5. Use `husky` to add `git commit` detection.
 6. `React Router Dom` and support for different languages ​​have been added, providing quick start `Demo` and preset `file system management`.
+7. You can use `npx` to always keep the template updated or use `npm` to install to make your favorite version stored locally.
 
 ### Highly self-modifying😯
 
@@ -34,26 +37,30 @@
 
 ## Use 🔧
 
-1. Global installation: `npm install pre-me-cli -g`
-2. Use the command to create a project template: 
+### method one:
+   -Global installation: `npm install pre-me-cli -g`
+   -Use the command to create a project template:
+
   ```
      pre-me-cli init [projectName]
-     - webpack-ts
-     - webpack-js
-     - vite-ts
-     - vite-js
+     -webpack-ts
+     -webpack-js
+     -vite-ts
+     -vite-js
   ```
-3. Enter the project and install dependencies: `cd projectName` && `yarn`
-4. Start the project: `yarn dev` or `npm run dev`
+### Method two (you can keep your template always up-to-date)
+  -npx installation: `npx pre-me-cli init [projectName]`
+  ```
+     -webpack-ts
+     -webpack-js
+     -vite-ts
+     -vite-js
+  ```
+### Startup project
 
-## Update✨
+-Enter the project and install dependencies: `cd projectName` && `yarn`
+-Startup project: `yarn dev` or `npm run dev`
 
-> If you have installed `pre-me-cli`, please use the following command to update the dependent packages:
-
-```
-npm update pre-me-cli -g
-
-```
 
 ---
 
