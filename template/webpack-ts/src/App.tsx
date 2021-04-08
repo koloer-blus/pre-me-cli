@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { routes } from '@/router/router';
 import { RenderRoutes } from '@/router/RenderRoutes';
@@ -7,10 +7,12 @@ import '@/App.less';
 
 const App: React.FC = () => {
   return (
-    <Router>
-      <ScrollToTop />
-      {RenderRoutes(routes)}
-    </Router>
+    <Suspense>
+      <Router>
+        <ScrollToTop />
+        {RenderRoutes(routes)}
+      </Router>
+    </Suspense>
   );
 };
 
