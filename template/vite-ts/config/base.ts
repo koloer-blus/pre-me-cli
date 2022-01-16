@@ -11,11 +11,11 @@ export default {
     mainFields: ['browser', 'module', 'main'],
     extensions: ['.js', '.json', '.jsx', '.ts', '.tsx'],
     alias: [
-      { find: '@', replacement: path.resolve(__dirname, '/src') },
-      { find: "components", replacement: path.resolve(__dirname, '/src/components') },
-      { find: "pages", replacement: path.resolve(__dirname, '/src/pages') },
-      { find: "hooks", replacement: path.resolve(__dirname, '/src/hooks') },
-      { find: "types", replacement: path.resolve(__dirname, '/src/types') },
+      { find: '@', replacement: path.resolve(__dirname, '../src') },
+      { find: "components", replacement: path.resolve(__dirname, '../src/components') },
+      { find: "pages", replacement: path.resolve(__dirname, '../src/pages') },
+      { find: "hooks", replacement: path.resolve(__dirname, '../src/hooks') },
+      { find: "types", replacement: path.resolve(__dirname, '../src/types') },
     ]
   }
 };
