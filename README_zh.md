@@ -33,8 +33,7 @@
 
    - 全局安装：`npm install pre-me-cli -g`
    - 使用命令创建项目模板：
-
-    创建项目`pre-me-cli init [projectName]`
+   创建项目`pre-me-cli init [projectName]`
      - `webpack-ts`：webpack为工具的typescript项目；
      - `webpack-js`：webpack为工具的javascript项目；
      - `vite-ts`：vite为工具的typescript项目；

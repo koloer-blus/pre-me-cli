@@ -33,8 +33,7 @@
 
    - Install globally: `npm install pre-me-cli -g`
    - Create a project template with the command:
-
-    Create project `pre-me-cli init [projectName]`
+   Create project `pre-me-cli init [projectName]`
      - `webpack-ts`: typescript project with webpack as a tool;
      - `webpack-js`: javascript project with webpack as a tool;
      - `vite-ts`: vite is a typescript project for tools;
