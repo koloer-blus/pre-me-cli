@@ -19,7 +19,8 @@
 4. Add `eslint` for code verification and code repair;
 5. Use `husky` to add `git commit` detection;
 6. Use `npm run commit` to implement canonical command submission;
-7. Use `npx` to always keep templates updated or install with `npm` to keep your favorite version in your local repository.
+7. Use `npx` to always keep templates updated or install with `npm` to keep your favorite version in your local repository;
+8. Use `yarn` for package management to avoid version problems and dependency errors;
 
 ### Highly self-modifying 😯
 
